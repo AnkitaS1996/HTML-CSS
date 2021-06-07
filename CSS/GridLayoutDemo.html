@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+        <title>Example--Display</title>
+        <style>
+            section{
+                border: 1px solid red;
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: repeat(3,2fr,2fr);
+                justify-content: center;
+                row-gap: 20px;
+                gap: 10px;
+                column-gap: 8px;
+               
+
+            }
+            div{
+                border: 1px solid; 
+                text-align: center;
+                font-size: 50px;
+                 
+                
+            }
+            .header{
+                grid-column-start: 1;
+                grid-column-end: 9;  
+                
+            }
+            .footer{
+                grid-column-start: 1;
+                grid-column-end: 9; 
+                 
+            }
+            .main1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+              grid-row: 2/4;
+                
+            }
+            .main6{
+                grid-column: 7/9;
+                grid-row: 2/4;
+                
+            }
+            .main2{
+                grid-column: 3/5;
+            }
+            .main3{
+                grid-column: 5/7;
+            }
+            .main4{
+                grid-column: 3/5;
+            }
+            .main5{
+                grid-column: 5/7;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <div class="header">Header</div>
+            <div class="main1">1</div>
+            <div class="main2">2</div>
+            <div class="main3">3</div>
+            <div class="main4">4</div>
+            <div class="main5">5</div>
+            <div class="main6">6</div>
+            <div class="footer">Footer</div>
+        </section>
+        
+    </body>
