@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+        <title>Flex</title>
+        <style>
+            section{
+                background-color: skyblue;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 10px;
+
+            }
+            div{
+                text-align: center;
+                border: 1px solid;  
+                flex: 1;
+                min-width: 250px; 
+                padding: 4px;   
+            } 
+            @media screen and (max-width:1130px){
+                div{
+                    min-width:48%;
+                    order: 3;
+                }
+                .Main{
+                    order: 1;
+
+                }
+                .main2{
+                    order: 1;
+
+                }
+                
+            }
+           
+            
+        </style>
+
+    </head>
+
+    <body>
+        <section>
+            <div class="Main">
+                <img src="..\Images\image6.png" alt="" height="100px">
+                <h1>Laptop</h1>
+                <h2>Rs. 80000/-</h2>
+            </div>
+            <div>
+                <img src="..\Images\Image2.jfif" alt="" height="100px" >
+                <h1>Headphone</h1>
+                <h2>Rs. 1000/-</h2>
+            </div>
+            
+            <div class="main2">
+                <img src="..\Images\images4.jfif" alt="" height="100px">
+                <h1>Camera</h1>
+                <h2>Rs. 15000/-</h2>
+            </div>
+            <div>
+                <img src="..\Images\image5.jpg" alt="" height="100px">
+                <h1>Apple Watch</h1>
+                <h2>Rs. 25000/-</h2>
+            </div>
+            
+        </section>
+    </body>
+</html>
