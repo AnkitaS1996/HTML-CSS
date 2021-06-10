@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+        <title>Assignmet 2 flex</title>
+        <style>
+            header{
+                background-color:rgb(54, 218, 32);
+                padding: 20px;
+                width: 97%;
+            }
+            h1{
+                font-size: 20px;
+                text-align: center;
+                color:black;
+            }
+            /*Product CSS*/
+            section{
+                padding: 5px;
+                   
+            }
+            section h1{ 
+                padding: 6px;
+                border-top: 1px solid gray;
+               
+            }
+            div{
+                border-bottom: 1px dashed black;
+            }
+            div div{
+                border: 1px solid lightgray;
+                margin-bottom: 5px;
+            }
+            
+            section > div{
+                display: flex;  
+            }
+
+            div div{
+               
+                flex: 1;
+                text-align: center;
+                margin: 15px;
+                
+                box-shadow: 10px 10px 25px gray;
+                padding: 8px;       
+            }
+            section > h2{
+                color: black;
+            }
+            h3{
+                display: none;
+
+            }
+            @media screen And (max-width:910px) {
+                section{
+                    display: flex;
+                }
+                section > div{
+                    flex-direction: column;
+                    flex: 1;
+                }
+                section > h2{
+                    display: none;
+                }
+                h3{
+                    display: block;
+                    text-align: center;
+                    color:seagreen;
+                }
+                .Smartphones{
+                    border-left: 2px dashed gray;
+                    border-right: 2px dashed gray;
+                }
+                
+            }
+            @media screen And (max-width:560px) {
+                section{
+                   flex-direction: column;
+                }
+                section > div{
+                   order: 3;
+                }
+                .Smartphones{
+                    order: 1;
+                }
+                .Laptops{
+                    order: 2;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Shop</h1>
+        </header>
+        <section class="main">
+            <h2>Home Applices</h2>
+            <div class="ElectricApplinces">
+                <h3>Home Applices</h3>
+                <div>
+                    <img src="..\Images\image11.jfif" alt="" height="100px">
+                    <h1>Charger</h1>
+                    <h2>Rs.1,000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image12.jpg" alt="" height="100px">
+                    <h1>Fridge</h1>
+                    <h2>Rs.30000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image14.jfif" alt="" height="100px">
+                    <h1>Electric Polar</h1>
+                    <h2>Rs. 6,000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image15.jfif" alt="" height="100px">
+                    <h1>Rasberrypi</h1>
+                    <h2>Rs. 5,000/-</h2>
+                </div>
+            
+            </div>
+            <h2>Smart Phones</h2>
+            <div class="Smartphones">
+                <h3>Smart Phones</h3>
+                <div> 
+                    <img src="..\Images\image7.jfif" alt="" height="100px">
+                    <h1>Samsung</h1>
+                    <h2>Rs. 8,000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image8.jfif" alt="" height="100px">
+                    <h1>Apple</h1>
+                    <h2>Rs. 40,000</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image9.png" alt="" height="100px">
+                    <h1>MI-Y2</h1>
+                    <h2>Rs. 10,000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image10.jfif" alt="" height="100px">
+                    <h1>Gallaxy</h1>
+                    <h2>Rs. 18,000/-</h2>
+                </div>
+            </div>
+            <h2>Laptops</h2>
+            <div class="Laptops">
+                <h3>Laptops</h3>
+                <div>
+                    <img src="..\Images\image6.png" alt="" height="100px">
+                    <h1>HP</h1>
+                    <h2>Rs. 80,000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image6.png" alt="" height="100px">
+                    <h1>DELL</h1>
+                    <h2>Rs.50,000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image6.png" alt="" height="100px">
+                    <h1>Lenova</h1>
+                    <h2>Rs.40,000/-</h2>
+                </div>
+                <div>
+                    <img src="..\Images\image6.png" alt="" height="100px">
+                    <h1>ASUS</h1>
+                    <h2>Rs.1,00,000/-</h2>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
