@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+        <title>Grid-Example-1</title>
+        <style>
+            body{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: 100px 250px 250px 100px;
+                grid-template-areas: 'header header header header''sidebar article article article''sidebar section section section''footer footer footer footer';
+                text-align: center;
+                gap: 10px;
+            }
+            header{
+                background-color: blueviolet;
+                /*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end ;*/
+               /* grid-area: 1/1/2/5;                    /* OR // grid-column-start: 1;grid-column-end: 5;*/
+               grid-area: header;
+            }
+            aside{
+                background-color: chocolate;
+                /*grid-area: 2/1/4/2;                    /* OR // grid-row-start: 2; grid-row-end: 4;*/
+                grid-area: sidebar;
+            }
+            article{
+                background-color: crimson;
+            }
+            section{
+                background-color: darkkhaki;
+                /*grid-area: 3/2/4/5;                     /* OR // grid-column-start: 2; grid-column-end: 5;*/
+                grid-area: section;
+            }
+            footer{
+                background-color: lightslategray;
+               /* grid-area:4/1/5/5;                                        /* OR // grid-column-start: 1; grid-column-end: 5;*/
+                grid-area: footer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <article>Article 1</article>
+        <article>Article 2</article>
+        <article>Article 3</article>
+        <Section>Section</Section>
+        <footer>Footer</footer>
+    </body>
+</html>
