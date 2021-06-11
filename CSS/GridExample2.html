@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+        <title>Grid-Example 2</title>
+        <style>
+            body{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                grid-template-rows: 100px 210px 140px 140px 100px;
+                gap: 10px;
+                text-align: center;
+                padding: 0 ,5px;
+            }
+            header{
+                background-color: aqua;
+                grid-area: 1/1/2/6;
+            }
+            aside{
+                background-color: darkcyan;
+                grid-area: 2/1/6/2;
+            }
+            section{
+                background-color: blueviolet;
+            }
+            .box1{
+                grid-area: 2/2/3/4;
+            }
+            .box2{
+                grid-area: 2/4/3/6;
+            }
+            article{
+                background-color: coral;
+            }
+            footer{
+                background-color: cornflowerblue;
+                grid-area: 5/2/6/6;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <aside>SideBar</aside>
+        <section class="box1">Section 1</section>
+        <section class="box2">Section 2</section>
+        <article>Article 1</article>
+        <article>Article 2</article>
+        <article>Article 3</article>
+        <article>Article 4</article>
+        <article>Article 5</article>
+        <article>Article 6</article>
+        <article>Article 7</article>
+        <article>Article 8</article>
+        <footer>Footer</footer>
+    </body>
+</html>
