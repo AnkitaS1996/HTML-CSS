@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+        <title>Animation ** @Keyframes-Rules</title>
+        <style>
+            /**{
+                padding: 10px;
+                margin:50px;
+            }*/
+            div{
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                /*background-color: red;*/
+                animation-name: ExampleDiv;
+                animation-duration:2s;
+               margin-left: 50%;
+               animation-fill-mode: both;
+               animation-direction: alternate;
+
+            }
+            @keyframes ExampleDiv{
+                from{background-color:red;
+                margin-left: 50px;
+                height: 500px;
+                }
+                to {background-color: aqua;
+                margin-left:0px;
+                width: 300px;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>Keyframes</div>
+    </body>
+</html>
