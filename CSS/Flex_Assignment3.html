@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        header{
+            text-align: center;
+            padding: 60px;
+            font-size: 50px;
+            background-color: aquamarine;
+            text-transform: uppercase;
+        }
+        section{
+           display: flex;
+        }
+        section>div,div>div,div>div{
+            border: 1px solid;
+            flex-grow: 3;
+        }
+        
+        #Sidebar{
+            height: 250px;
+            flex-grow: 2; 
+            text-align: center; 
+            background-color: blanchedalmond;  
+        }
+        #Sidebar>a{
+            text-decoration: none;
+            display: block;
+            color: black;
+            border-bottom: 1px solid yellowgreen;
+            padding: 10px; 
+        }
+        #items{
+            height: 500px;
+            display: flex; 
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            background-color: slateblue;
+            flex-grow: 4;
+        }
+        #items>div{
+            text-align: center;
+            width: 100px;
+            height:480px;
+            margin: 10px;
+            font-size: 50px;
+            flex-grow: 1;
+            line-height: 75px;
+            background-color: seagreen;
+        }
+       
+        #Product1,#Product2,#Product3{
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #Product1>div,#Product2>div,#Product3>div{
+
+            width: 500px;
+            flex-grow: 1;
+            max-height: 450px;
+            margin: 10px;
+            background-color: violet;
+           
+        }
+        .box{
+            height:200px;
+            max-width: 300px;
+            flex-grow: 2;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Electronics And Electricals Shop
+    </header>
+    <section>
+        
+        <div id="items">
+            <div id="Product1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div id="Product2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div id="Product3">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div id="Sidebar">
+            <a href="#">Laptop</a>
+            <a href="#">Mobile</a>
+            <a href="#">Fridge</a>
+            <a href="#">PC</a>
+        </div>   
+    </section>
+</body>
+</html>
