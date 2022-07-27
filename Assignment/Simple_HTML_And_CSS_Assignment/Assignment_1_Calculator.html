@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <style>
+           body{
+                margin-top: 50px;
+            }
+           table,tr{
+            /*width: 50%;*/
+            margin:auto;
+            border: 1px solid;
+            border-collapse: collapse;
+           }
+           td{
+            height: 35px;
+            text-align: center;
+            vertical-align: middle;
+            background-color:white;
+           }
+           button{
+            color:black;
+            width:100px;
+            height:50px;
+            border:none;
+            background: #828282;
+           /* box-shadow: 2px 2px 2px , -10px -10px 20px black;*/
+            font-size: 20px;
+            margin-Right: 10px;
+           /* outline: none;*/
+            font-family:Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            margin: auto;
+           }
+           button:active{
+             border-radius: 15px;
+           }
+           .radio1{
+             font-size: 20px;
+             text-align: left;
+             padding: 10px;
+             background-color: gainsboro;
+           }
+           .head{
+            font-size: 20px;
+            text-align: right;
+            margin:10%;
+            border: 1px solid;
+            border-collapse: collapse;
+           }
+           .equal{
+             height: 100px;
+             color: white;
+             background-color: green;
+           }
+           .Zero{
+            width:205px;
+           }
+           .arrow{
+            width:205px;
+            background-color: red;
+            color: white;
+           }
+           .Clear{
+            color:white;
+            background-color: red;
+           }
+           .PlusMinus{
+            color:white;
+            background-color: red;
+           }
+           
+           
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr></tr>
+            <tr>
+                <td class="head"></td>
+                <td colspan="11" class="head">0</td>
+            </tr>
+            <tr>
+                <td><button>mod</button></td>
+                <td colspan="5" class="radio1">
+                    <input type="radio" id="deg" name="deg">
+                    <label for="deg">deg</label>
+                    <input type="radio" id="rad" name="deg">
+                    <label for="rad">rad</label>
+                </td>
+                <td><button>MC</button></td>
+                <td><button>MR</button></td>
+                <td><button>MS</button></td>
+                <td><button>M+</button></td>
+                <td><button>M-</button></td>
+            </tr>
+            <tr>
+                <td><button>sinh</button></td>
+                <td><button>cosh</button></td>
+                <td><button>tanh</button></td>
+                <td><button>Exp</button></td>
+                <td><button>(</button></td>
+                <td><button>)</button></td>
+                <td colspan="2"><button class="arrow">&LeftArrow;</button></td>
+                <td><button class="Clear">C</button></td>
+                <td><button class="PlusMinus">+/-</button></td>
+                <td><button>&Sqrt;</button></td>
+            </tr>
+            <tr>
+                <td><button>sinh<sup>-1</sup></button></td>
+                <td><button>cosh<sup>-1</sup></button></td>
+                <td><button>tanh<sup>-1</sup></button></td>
+                <td><button>log<sub>2</sub>x</button></td>
+                <td><button>ln</button></td>
+                <td><button>log</button></td>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>/</button></td>
+                <td><button>%</button></td>
+            </tr>
+            <tr>
+                <td><button>&Pi;</button></td>
+                <td><button>e</button></td>
+                <td><button>n!</button></td>
+                <td><button>log<sub>y</sub>x</button></td>
+                <td><button>e<sup>x</sup></button></td>
+                <td><button>10<sup>x</sup></button></td>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>*</button></td>
+                <td><button>1/x</button></td>
+            </tr>
+            <tr>
+                <td><button>sin</button></td>
+                <td><button>cos</button></td>
+                <td><button>tan</button></td>
+                <td><button>x<sup>y</sup></button></td>
+                <td><button>x<sup>3</sup></button></td>
+                <td><button>x<sup>2</sup></button></td>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>-</button></td>
+                <td rowspan="2"><button class="equal">=</button></td>
+            </tr>
+            <tr>
+                <td><button>sin<sup>-1</sup></button></td>
+                <td><button>cos<sup>-1</sup></button></td>
+                <td><button>tan<sup>-1</sup></button></td>
+                <td><button><sup>y</sup>&Sqrt;</button></td>
+                <td><button><sup>3</sup>&Sqrt;</button></td>
+                <td><button>|x|</button></td>
+                <td colspan="2"><button class="Zero" >0</button></td>
+                <td><button>.</button></td>
+                <td><button>+</button></td>
+            </tr>
+        </table>    
+    </body>
+</html>

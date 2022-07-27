@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Assignment 6</title>
+    <style>
+        header{
+            background-color:gray;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            text-transform: uppercase;
+            color: white;
+            padding: 30px;
+        }
+        section{
+            display:flex;
+            padding: 10px;
+            
+        }
+        .sidebar{
+            flex-grow: 2; 
+            padding: 10px;
+            background-color: bisque;  
+        }
+        .sidebar>a{
+            text-decoration: none;
+            display: block;
+            color: black;
+            padding: 10px 5px 20px; 
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        /* items design */
+        .items{
+            /* border: 1px solid;  */
+            flex-grow: 4;
+            padding:10px;
+            /* justify-content: space-around; */
+            /* display: flex; */
+        }
+        .Box{
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+             border: 1px solid; 
+        }
+        .product1{
+            display: flex;
+            flex-grow: 2;
+            padding: 10px;
+            margin:5px;
+            justify-content: space-around;
+            /* border: 1px solid; */
+        }
+        .tems>.product1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>Electronic Shoppee</header>
+    <section>
+        <div class="sidebar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Carrer</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="items">
+            <div class="product1"> 
+                <div class="Box"></div>
+                <div class="Box"></div>
+                <div class="Box"></div>
+            </div>
+            <div class="product1">
+                <div class="Box"></div>
+                <div class="Box"></div>
+                <div class="Box"></div>
+            </div>
+            <div class="product1">
+                <div class="Box"></div>
+                <div class="Box"></div>
+                <div class="Box"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
